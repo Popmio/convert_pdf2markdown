@@ -1,0 +1,29 @@
+
+model:
+  name: "qwen-vl-max"
+  url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  apikey: ""
+  timeout: 60
+  max_retries: 3
+
+pdf2img:
+  dpi: 200
+  format: "jpeg"
+  quality: 95
+  thread_count: 4
+  poppler_path: null
+
+img2markdown:
+  batch_size: 10
+  delay_between_requests: 0.5  # seconds
+
+task_manager:
+  tasks_dir: "tasks"
+  task_file_prefix: "task_"
+  status_update_interval: 5  # seconds
+
+paths:
+  pdf_input: "pdfs"
+  image_output: "images"
+  markdown_output: "markdowns"
+  logs: "logs"
